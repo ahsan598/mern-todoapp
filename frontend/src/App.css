@@ -1,0 +1,88 @@
+/* Background styling to match the purple gradient */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw;
+    display: flex;
+    align-items: center; /* Vertical Center */
+    justify-content: center; /* Horizontal Center */
+    background: linear-gradient(135deg, #818cf8 0%, #6366f1 50%, #8b5cf6 100%); /* Purple Gradient */
+}
+
+/* Main White Card Container */
+.container {
+    width: 500px !important; /* Fixed width */
+    min-height: 500px;
+    background-color: white !important;
+    padding: 20px;
+    border-radius: 5px !important;
+    display: flex;
+    flex-direction: column;
+    /* Box Shadow for better look */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2) !important; 
+}
+
+/* Dark Header Box */
+.heading {
+    background-color: #23252e;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Class for Flex Rows (Form & Tasks) */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+}
+
+/* Form Flex Container */
+.task-form {
+    display: flex;
+    align-items: center; /* Vertically align input and button */
+    gap: 15px; /* Space between input and button */
+    margin-bottom: 20px;
+}
+
+/* Ensure Button doesn't shrink or wrap */
+.add-task-btn {
+    height: 40px; /* Match Input Height (MUI small input is approx 40px) */
+    min-width: 120px !important; /* Force width */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Task Item Styling */
+.task_container {
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9 !important; /* Slight grey for tasks */
+}
+
+/* Strike-through for completed tasks */
+.line_through {
+    text-decoration: line-through;
+    color: #888;
+    flex-grow: 1; /* Text takes available space */
+    margin-left: 10px;
+}
+
+.task {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
