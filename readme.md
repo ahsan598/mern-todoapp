@@ -19,9 +19,7 @@ It follows a modern micro-service style architecture with separate services for 
 |-------------|-----------------------------------------------------------|---------------|
 | **Node.js** | JavaScript runtime for backend service | [Install Node.js](https://nodejs.org/en/download) |
 | **npm**     | Package manager for installing and managing dependencies | [npm Documentation](https://docs.npmjs.com/) |
-| **Docker**  | Builds and runs container images for application services | [Install Docker](https://docs.docker.com/engine/install/) |
-| **Kubectl** *(optional for k8s)* | Used to interacting with the Kubernetes API server. | [Install Kubectl CLI](https://kubernetes.io/docs/tasks/tools/) |
-| **KIND** *(optional for k8s)* | Used to deploy and test the application locally on Kubernetes | [Install Kind](https://kind.sigs.k8s.io/docs/user/quick-start/) |
+| **Docker& Docker Compose**  | Builds and runs container images for application services | [Install Docker](https://docs.docker.com/engine/install/) |
 
 
 ### 🧪 Running the Application with Docker Compose
@@ -55,11 +53,3 @@ docker compose down -v
 - Persistent data using MongoDB volumes
 - Isolated services using Docker containers
 - Easy setup with single command deployment
-
-
-### 📚 References
-- [Docker Documentation](https://docs.docker.com/)
-- [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/)
-- [MongoDB on Kubernetes](https://www.mongodb.com/kubernetes)
-- [Kubernetes Official Docs](https://kubernetes.io/docs/)
-- [KIND Guide](https://kind.sigs.k8s.io/)
