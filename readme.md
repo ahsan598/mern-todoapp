@@ -1,28 +1,31 @@
 # MERN Stack ToDo Web App
 
 ### 🎯 Overview
-This project demonstrates how to containerize a full-stack three-tier ToDo web application using **Docker & Docker Compose.**
+This project demonstrates how to containerize a full-stack three-tier ToDo web application using **Docker Compose.**
 It follows a modern micro-service style architecture with separate services for **frontend, backend, and database.**
 
 
 ### 🧩 App Architecture
-| Layer                | Technology             | Description                                 |
-| -------------------- | ---------------------- | ------------------------------------------- |
-| **Frontend**         | React.js               | User interface for managing ToDo items      |
-| **Backend**          | Node.js                | REST API service handling business logic    |
-| **Database**         | MongoDB                | Persistent data storage                     |
-| **Containerization** | Docker, Docker Compose | Service orchestration and environment setup |
+
+| Layer                | Technology     | Description                                 |
+| -------------------- | -------------- | ------------------------------------------- |
+| **Frontend**         | React.js       | User interface for managing ToDo items      |
+| **Backend**          | Node.js        | REST API service handling business logic    |
+| **Database**         | MongoDB        | Persistent data storage                     |
+| **Containerization** | Docker Compose | Service orchestration and environment setup |
 
 
 ### 🛠️ Prerequisites
-| Tool        | Purpose                                                   | Documentation |
-|-------------|-----------------------------------------------------------|---------------|
+
+| Tool        | Purpose                                     | Documentation            |
+|-------------|-----------------------------------------------------------|------------|
 | **Node.js** | JavaScript runtime for backend service | [Install Node.js](https://nodejs.org/en/download) |
-| **npm**     | Package manager for installing and managing dependencies | [npm Documentation](https://docs.npmjs.com/) |
-| **Docker& Docker Compose**  | Builds and runs container images for application services | [Install Docker](https://docs.docker.com/engine/install/) |
+| **npm**     | Package manager for installing and managing dependencies  | [npm Documentation](https://docs.npmjs.com/) |
+| **Docker**  | Builds and runs container images for application services | [Install Docker](https://docs.docker.com/engine/install/) |
 
 
 ### 🧪 Running the Application with Docker Compose
+
 **Step 1 — Build & Start Services**
 ```sh
 docker compose up --build -d
@@ -36,6 +39,7 @@ docker compose ps
 docker compose logs -f
 ```
 **Step 4 — Access the Application**
+
 Open your browser and navigate to:
 ```sh
 http://localhost:3000
